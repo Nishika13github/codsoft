@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nishika - Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: #0077b6;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      background: #f0f4f8;
+    }
+
+    .firstSection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .leftSection {
+      flex: 1;
+      min-width: 280px;
+      font-size: 2rem;
+      color: #023e8a;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 8px;
+    }
+
+    .rightSection img {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    hr {
+      margin: 3rem 0;
+      border: 1px solid #0077b6;
+    }
+
+    .secondSection {
+      text-align: center;
+    }
+
+    .secondSection h1 {
+      color: #023e8a;
+      margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-card img {
+      width: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .skill-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #0077b6;
+    }
+
+    .skill-desc {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .footer-section {
+      margin: 10px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      color: #caf0f8;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul li a {
+      color: #caf0f8;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 0.8rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="left">Nishika Choudhary's Portfolio</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, I'm <span style="color:#0077b6;">Nishika</span> <br>
+        A Passionate <br>
+        <span id="element"></span>
+        <br>
+        <a href="resume.pdf" class="resume-button" download>Download Resume</a>
+      </div>
+      <div class="rightSection">
+        <img src="dev.png" alt="Developer Image">
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="secondSection">
+      <span style="color:gray;">What I have done so far</span>
+      <h1>Skills Section</h1>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="skills.png" alt="Skills Icon">
+          <div class="skill-title">Technical Skills</div>
+          <div class="skill-desc">
+            HTML, CSS, JavaScript, C/C++, Node.js
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="lang.png" alt="Language Icon">
+          <div class="skill-title">Languages</div>
+          <div class="skill-desc">
+            English, Hindi
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="project.png" alt="Project Icon">
+          <div class="skill-title">Projects</div>
+          <div class="skill-desc">
+            Nutrition Tracker, Portfolio, Tour Page
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="deve.png" alt="Developer Icon">
+          <div class="skill-title">HTML Developer</div>
+          <div class="skill-desc">
+            Responsive websites with modern UI techniques.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About</h4>
+        <p>Passionate Web Developer and Designer</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Nishika's Portfolio | All rights reserved
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'UI/UX Designer', 'Frontend Engineer'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+
+</body>
+</html>

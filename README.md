@@ -1,2 +1,0 @@
-# codsoft
-Virtual Internship Task
